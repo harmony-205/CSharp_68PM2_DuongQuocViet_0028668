@@ -1,4 +1,4 @@
-﻿namespace Login
+﻿namespace QLSV
 {
     partial class Form1
     {

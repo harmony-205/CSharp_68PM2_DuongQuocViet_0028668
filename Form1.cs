@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login
+namespace QLSV
 {
     public partial class Form1 : Form
     {
@@ -31,18 +31,24 @@ namespace Login
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-
-            // Email sinh viên và MSSV mẫu
             string studentEmail = "0028668@st.huce.edu.vn";
             string studentID = "123456";
 
             if (email == studentEmail && password == studentID)
             {
-                MessageBox.Show("Đăng nhập thành công!");
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                AddDemoLayoutQLSV mainForm = new AddDemoLayoutQLSV();
+
+                mainForm.Show();
+
+                this.Hide();
+
+                mainForm.FormClosed += (s, args) => Application.Exit();
             }
             else
             {
-                MessageBox.Show("Đăng nhập thất bại!");
+                MessageBox.Show("Đăng nhập thất bại! Vui lòng kiểm tra lại Email hoặc Mã sinh viên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
