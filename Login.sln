@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login.csproj", "{2623D9BB-D1A3-4B1F-B985-7B0077752697}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV", "QLSV.csproj", "{2623D9BB-D1A3-4B1F-B985-7B0077752697}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

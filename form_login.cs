@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLSV
 {
-    public partial class Form1 : Form
+    public partial class form_login : Form
     {
-        public Form1()
+        public form_login()
         {
             InitializeComponent();
         }
@@ -38,7 +38,7 @@ namespace QLSV
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                AddDemoLayoutQLSV mainForm = new AddDemoLayoutQLSV();
+                Main mainForm = new Main();
 
                 mainForm.Show();
 

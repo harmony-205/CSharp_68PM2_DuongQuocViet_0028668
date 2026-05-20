@@ -1,6 +1,6 @@
 ﻿namespace QLSV
 {
-    partial class Form1
+    partial class form_login
     {
         /// <summary>
         /// Required designer variable.
