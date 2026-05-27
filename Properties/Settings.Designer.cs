@@ -22,5 +22,16 @@ namespace QLSV.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-O4JV1QN6;Initial Catalog=qlsv;Integrated Security=True;TrustSe" +
+            "rverCertificate=True")]
+        public string qlsvConnectionString {
+            get {
+                return ((string)(this["qlsvConnectionString"]));
+            }
+        }
     }
 }
