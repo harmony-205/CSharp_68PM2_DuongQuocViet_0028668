@@ -50,6 +50,7 @@ namespace QLSV
             sinhvien.hoten = txtHoTen.Text;
             sinhvien.gioitinh = cboGioiTinh.Text;
             sinhvien.ngaysinh = DateTime.Parse(dtpNgaySinh.Text);
+            
             try
             {
                 db.tbl_sinhviens.InsertOnSubmit(sinhvien);
@@ -61,9 +62,9 @@ namespace QLSV
             {
                 MessageBox.Show(ex.Message);
             }
-            db.tbl_sinhviens.InsertOnSubmit(sinhvien);
-            db.SubmitChanges();
-            LoadData();
+            //db.tbl_sinhviens.InsertOnSubmit(sinhvien);
+            //db.SubmitChanges();
+            //LoadData();
         }
         public void LoadData()
         {
@@ -78,6 +79,11 @@ namespace QLSV
             cboMaLop.DataSource = dSLH;
             cboMaLop.DisplayMember = "tenLop"; // Hiển thị tên lớp
             cboMaLop.ValueMember = "malop"; // Giá trị thực tế là id của lớp
+        }
+
+        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

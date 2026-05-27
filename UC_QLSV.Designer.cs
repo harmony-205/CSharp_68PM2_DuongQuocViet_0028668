@@ -40,10 +40,15 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_DSSV = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboMaLop = new System.Windows.Forms.ComboBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,14 +57,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dgv_DSSV = new System.Windows.Forms.DataGridView();
-            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.cboMaLop = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSSV)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button10
@@ -182,6 +182,16 @@
             this.panel1.Size = new System.Drawing.Size(723, 534);
             this.panel1.TabIndex = 36;
             // 
+            // dgv_DSSV
+            // 
+            this.dgv_DSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DSSV.Location = new System.Drawing.Point(-3, -2);
+            this.dgv_DSSV.Name = "dgv_DSSV";
+            this.dgv_DSSV.RowHeadersWidth = 51;
+            this.dgv_DSSV.RowTemplate.Height = 24;
+            this.dgv_DSSV.Size = new System.Drawing.Size(725, 534);
+            this.dgv_DSSV.TabIndex = 0;
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -235,6 +245,49 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
+            // 
+            // cboMaLop
+            // 
+            this.cboMaLop.FormattingEnabled = true;
+            this.cboMaLop.Items.AddRange(new object[] {
+            "68PM1",
+            "68PM2"});
+            this.cboMaLop.Location = new System.Drawing.Point(47, 377);
+            this.cboMaLop.Name = "cboMaLop";
+            this.cboMaLop.Size = new System.Drawing.Size(404, 30);
+            this.cboMaLop.TabIndex = 17;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CustomFormat = "";
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Location = new System.Drawing.Point(49, 309);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(402, 30);
+            this.dtpNgaySinh.TabIndex = 16;
+            this.dtpNgaySinh.ValueChanged += new System.EventHandler(this.dtpNgaySinh_ValueChanged);
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGioiTinh.Location = new System.Drawing.Point(49, 236);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(402, 30);
+            this.cboGioiTinh.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(45, 209);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 24);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Giới tính";
             // 
             // label4
             // 
@@ -328,56 +381,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(45, 209);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 24);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Giới tính";
-            // 
-            // dgv_DSSV
-            // 
-            this.dgv_DSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DSSV.Location = new System.Drawing.Point(-3, -2);
-            this.dgv_DSSV.Name = "dgv_DSSV";
-            this.dgv_DSSV.RowHeadersWidth = 51;
-            this.dgv_DSSV.RowTemplate.Height = 24;
-            this.dgv_DSSV.Size = new System.Drawing.Size(725, 534);
-            this.dgv_DSSV.TabIndex = 0;
-            // 
-            // cboGioiTinh
-            // 
-            this.cboGioiTinh.FormattingEnabled = true;
-            this.cboGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cboGioiTinh.Location = new System.Drawing.Point(49, 236);
-            this.cboGioiTinh.Name = "cboGioiTinh";
-            this.cboGioiTinh.Size = new System.Drawing.Size(402, 30);
-            this.cboGioiTinh.TabIndex = 15;
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Location = new System.Drawing.Point(49, 309);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(402, 28);
-            this.dtpNgaySinh.TabIndex = 16;
-            // 
-            // cboMaLop
-            // 
-            this.cboMaLop.FormattingEnabled = true;
-            this.cboMaLop.Items.AddRange(new object[] {
-            "Lớp 68PM1",
-            "Lớp 68PM2"});
-            this.cboMaLop.Location = new System.Drawing.Point(47, 377);
-            this.cboMaLop.Name = "cboMaLop";
-            this.cboMaLop.Size = new System.Drawing.Size(404, 30);
-            this.cboMaLop.TabIndex = 17;
-            // 
             // UC_QLSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -403,9 +406,9 @@
             this.Size = new System.Drawing.Size(1241, 802);
             this.Load += new System.EventHandler(this.UC_QLSV_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSSV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSSV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
